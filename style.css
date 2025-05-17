@@ -1,0 +1,927 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/*WILDCARD*/
+
+*{  box-sizing: border-box;
+    font-family:"Raleway","sans-serif";
+
+}
+
+body
+{ margin: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+
+/**HEADER **/
+
+a{
+color: inherit;
+text-decoration: none;
+}
+
+nav{
+display: flex;
+align-items: center;
+justify-content:flex-end;
+flex-wrap: wrap;
+margin-bottom: 2rem;
+margin-top: 2rem;
+}
+
+
+nav a
+{padding: 2rem;
+ padding-top: 41px;
+ margin-right: 1rem;
+}
+
+.sign 
+{ font-weight: bolder;
+ color:#0065fc;
+ font-size: 17px ;
+}
+
+ .sign:hover
+{border-top: blue solid 3px;}
+
+.signup:hover
+{border-top: blue solid 3px;}
+
+.signup
+{ font-weight: bolder;
+    }
+
+#logo
+{
+margin-right: auto;
+margin-left: 1rem;
+width: 7rem;
+height: 45px;
+padding-left : 3rem;
+object-fit: cover;
+
+}
+
+/*INPUT*/
+
+.fas.fa-search
+{ visibility: hidden; 
+
+}
+ 
+
+.search
+{padding: 0 2rem; 
+margin-bottom: 0.8rem;
+}
+
+form {
+display: flex;
+margin-left: 43px;
+margin-bottom: 0.8rem;
+font-size: 1.2rem;
+
+}
+
+.search_form i { 
+padding : 15px;
+background-color: rgb(242, 242, 242);
+border-radius : 1rem 0 0 1rem;
+flex-basis: 3rem;}
+
+
+.search_form input 
+{
+flex-basis: 13rem;
+border : 1px solid rgb(242, 242, 242);
+overflow: auto;
+}
+
+
+.search_form input::placeholder
+{ color: black;
+font-weight: bold;
+font-size :17px;
+}
+
+
+.search_form button
+{ border-radius: 0 1rem 1rem 0 ;
+background-color: #0065fc;
+color: white;
+font-size: 1.2rem;
+font-weight: bold;
+font-size: 0.9rem;
+width: 130px;
+border: none;
+font-size: 17px;
+cursor: pointer;
+opacity: 0.9;
+transition : transform 200ms;
+height : 50px ;
+display: flex;
+padding-left: 10px;
+align-items: center;
+
+}
+
+.search_form button:hover
+{ opacity :1 ;
+transform : scale(1.03)
+
+}
+
+
+/*RECHERCHER*/
+
+.search h1,
+.search p
+{ margin-bottom: 1rem ;
+  margin-left: 1rem;
+
+}
+
+.search h1
+{ font-size: 22px;
+ height : 14px ;
+
+}
+
+.search p
+{ font-size: 17px;}
+
+
+/*FILTERS */
+
+.filter-list 
+{ display : flex;
+align-items: center;
+gap : 1rem 2rem;
+flex-wrap: wrap;
+margin-left: 48px;
+margin-top: 1.3rem;
+}
+
+.filter
+{
+border : 2px solid lightgrey;
+border-radius : 2rem;
+display : flex;
+align-items : center;
+transition : all 200ms;
+}
+
+
+.filter .fas
+{ 
+color: blue;
+background-color: lightblue;
+border-radius: 50% ;
+margin : -2px;
+display : flex;
+height: 3rem;
+width :3rem;
+justify-content: center;
+align-items: center;
+}
+
+.filter:hover
+{ background-color: rgb(220, 237, 243);
+    transform : scale(1.02);
+}
+
+.filter span
+{ font-weight: bold;
+ padding: 0rem 1rem;
+}
+
+/*INFO*/
+
+.info
+{display: flex;
+flex-direction: row;
+gap : 1rem;
+height: 20px;
+margin-left :45px;
+margin-top: 30px;
+
+ }
+
+.info .fas
+{ border: solid rgb(219, 219, 219) 1px ;
+border-radius: 50% ;
+color :blue;
+width : 2rem;
+height: 2rem;
+display : flex;
+align-items: center;
+justify-content:center;
+font-size: 14px ;
+}
+
+.info p
+{ margin-top: 6px;
+  font-size: 17px;
+}
+
+
+/*APPARTMENT LIST*/
+
+.apartment
+{ display: flex;
+margin-bottom: 2rem;
+margin-left : 1.5em;
+
+}
+
+.apartment > div {
+  background-color: rgb(240, 240, 240);
+  margin-top: 40px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-right: 2.5rem;
+  padding-bottom: 2.5rem; 
+  margin-left: 1.5rem;
+}
+
+.apartment .marseille 
+{ flex-basis: 71% ;
+
+}
+
+.apartment .marseille a
+{ font-weight: bold;
+display: inline-block;
+padding-top : 1.5rem;
+font-size: 1.5rem;
+
+}
+
+.apartment .popular 
+{ flex-basis: 30%;
+
+}
+
+.apartment-card p,
+.apartment-card h3
+{ margin: 0.2rem; 
+}
+
+
+/*LIST APPARTEMENTS MARSEILLE*/
+
+.marseille-list
+{ display: flex;
+ flex-wrap: wrap;
+ gap : 2rem;
+ justify-content: space-around ;
+ margin-bottom: 1rem;
+
+}
+
+
+/* POPULAR */
+
+.apartment .popular-flex
+{ display: flex;
+flex-direction: column;
+gap :1.7rem;
+flex-wrap: wrap;
+ flex-basis: 100%;
+justify-content: space-evenly;
+
+}
+
+.apartment
+{flex-basis: 100%;
+
+}
+
+
+/*APPARTMENT CARD*/
+
+.apartment-card
+{
+background-color: white ;
+border-radius: 1rem;
+box-shadow: 0 0 16px beige;
+flex-grow : 1;
+flex-basis :30%;
+
+}
+.apartment-card .marg
+{ margin-left: 1rem;
+ display: flex;
+ flex-direction: column;
+ padding-bottom: 0.8rem;
+
+}
+
+.apartment-card img
+{ border-radius: 1rem 1rem 0rem 0rem;
+ padding: 0.5rem;
+ height :10rem;
+ width: 100%;
+ object-fit: cover;
+ min-width: 11rem;
+}
+
+.apartment-card p,
+.apartment-card h3,
+.popular-description p,
+.popular-description h3
+{ margin :0.2rem; 
+
+}
+
+
+.blue
+{ color: #0065fc;
+
+}
+
+.grey 
+{ color: lightgrey;
+
+}
+
+/*POPULAR CARD*/
+
+.popular
+{ display: flex;
+flex-direction: column;
+}
+
+
+.popular-card.apartment-card img
+{ height :auto ; 
+border-radius: 1rem 0rem 0rem 1rem;
+width :40%;
+margin-right: 0.5rem;
+object-fit: cover;
+object-position: center;
+}
+
+.popular-description 
+{ flex-basis: 100%;
+display: flex;
+flex-direction: column;
+margin-left: 0.5rem;
+}
+
+.popular-card
+{ display : flex;
+min-width: 23rem;
+max-height: 12rem;
+}
+
+.popular-card .stars 
+{ margin-top: 5rem ;
+}
+
+.popular h3
+{ display: flex;
+justify-content: space-between;
+
+}
+
+.marseille h3,
+.popular h3
+{ margin-top:0.5rem;
+
+}
+
+.title
+{ font-size: 1.5rem;
+}
+
+/*ACTIVITIES*/
+
+.activites-list> *
+{
+ background-size: cover;
+ background-position: center ;
+ display: flex;
+border-radius: 2rem ;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+transition: all 200ms;
+
+}
+
+.activites-list > div:hover {
+transform: scale(1.02);
+
+}
+
+.activites-list
+{
+display : grid;
+grid-template-columns: repeat(auto-fit, minmax(10rem,25rem));
+grid-template-rows:repeat(5, 1fr);
+margin-bottom: 20vh;
+grid-gap :3.8rem;
+justify-content: center;
+margin-top: 2rem;
+margin-bottom: 5rem;
+margin-right :1.5rem;
+margin-left: 1rem ;
+
+}
+
+.activities 
+{ padding-left: 4.2rem;
+margin-top: 4rem;
+font-size: 1.5rem;
+}
+
+.activites-list h3
+{ background-color:white;
+margin-top: auto;
+margin-bottom: 0;
+width: 100%;
+padding: 1rem;
+border-radius: 0 0 2rem 2rem;
+padding-left: 2rem;
+}
+
+.big
+{height: 41rem;
+width: 26rem;
+}
+
+.big1
+{grid-row : 1/-1;
+background-image: url("./images/activites/4_small/vieuxport.jpg");
+width: 26rem;
+}
+
+.big2
+{grid-column: 3/4;
+grid-row: 1/-1;
+background-image: url("./images/activites/4_small/calanques.jpg");
+}
+
+.medium1 
+{grid-row: 1/span 3;
+background-image: url("./images/activites/4_small/fort.jpg");
+width: 26rem;
+}
+
+.medium2
+{grid-row:3/-1;
+grid-column: 4/-1;
+background-image: url("./images/activites/4_small/parclongchamp.jpg");
+width: 26rem;
+}
+
+.small1 
+{grid-column : 2/3;
+grid-row: 4/-1;
+background-image: url("./images/activites/4_small/frioul.jpg");
+width: 26rem;
+height: 14rem;
+}
+
+.small2
+{ grid-column: 4/-1;
+ grid-row: 1/3;
+background-image: url("./images/activites/4_small/Notredame.jpg");
+width: 26rem;
+}
+
+
+/*FOOTER*/
+
+footer
+{background-color: #f0f0f0;
+width: 102%;
+display : flex;
+justify-content: space-evenly;
+font-size: medium;
+padding: 1rem;
+}
+
+
+/***************RESPONSIVE-****************************/
+
+/** HEADER **/
+
+@media (max-width: 455px) 
+
+{
+
+nav {
+height: 140px;
+}
+
+    .sub_nav  {
+        display : flex;
+        flex-basis : 100%;
+        justify-content: space-around;
+        height: 70px;
+            }
+
+        #logo
+        {border: none;
+        margin-right: auto;
+        display: flex;
+        margin-left: auto;
+      justify-content: center ;
+    }
+
+
+#logo {
+  margin-right: auto;
+  width: 7rem;
+  height: 45px;
+  padding-left: 0rem;
+  object-fit: cover;
+}
+
+    .sign:hover
+{border-bottom: blue solid 3px;
+border-top: transparent;}
+
+.signup:hover
+{border-bottom: blue solid 3px;
+border-top: transparent;}
+
+}
+   
+
+/** SEARCH**/
+
+@media (max-width: 700px) 
+
+{ 
+
+.search h1
+
+  { display : inline-block;
+flex-shrink: 4;
+max-width: 90%;
+
+}
+
+.search p
+
+{ display: inline-block;
+flex-shrink: 5;
+margin-top: 10px;
+max-width: 110%;
+height: 30px;
+}
+   
+.search-text
+{display : none;
+
+}
+
+.fas.fa-search
+ 
+{
+    visibility: visible;
+ background-color: #0065fc;
+ border-radius: 0rem 5rem 5rem 0rem ;
+ padding-right:20px ;
+
+}
+
+.search-text
+{ background-color: blue;
+}
+
+.search_form button
+{ border-radius: 0rem 1rem 1rem 0rem ;
+flex-basis: 10%;
+cursor : pointer;
+}
+
+}
+
+/**APPARTMENT LIST**/
+
+@media (max-width: 1400px) 
+
+{ 
+    .apartment
+    { flex-direction: column-reverse;
+    
+    }
+
+}
+
+@media (max-width: 500px) { 
+
+
+  .apartment .marseille {
+    flex-basis: 66%;
+    display: flex;
+    flex-direction: column;
+    margin-right: -1rem;
+
+  }
+
+
+}
+
+/*POPULAR*/
+
+@media (max-width:200px) 
+
+{
+    .apartment .popular-flex
+    { flex-direction: row;
+        height: auto;
+    }
+    
+}
+
+/*ACTIVITES*/
+
+@media (max-width: 1750px)
+
+{ 
+.activites-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem,25rem));
+  grid-template-rows: repeat(5, 1fr);
+  margin-bottom: 20vh;
+  grid-gap: 3.8rem;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-right: -0.5rem;
+  margin-left: 1rem;
+  padding: 2rem;
+
+}
+
+ .big1 {
+ grid-row: 1/-1;
+ background-image: url("./images/activites/4_small/vieuxport.jpg");
+width: 21rem;
+  }
+
+ .medium1 {
+grid-row: 1/span 3;
+ background-image: url("./images/activites/4_small/fort.jpg");
+ width: 20rem;
+ }
+
+.small1 {
+ grid-column: 2/3;
+grid-row: 4/-1;
+background-image: url("./images/activites/4_small/frioul.jpg");
+width: 20rem;
+height: 14rem;
+
+}
+
+.big {
+height: 41rem;
+width: 20rem;
+
+}
+
+.small2 {
+grid-column: 4/-1;
+grid-row: 1/3;
+background-image: url("./images/activites/4_small/Notredame.jpg");
+width: 20rem;
+
+}
+
+.medium2 {
+ grid-row: 3/-1;
+grid-column: 4/-1;
+background-image: url("./images/activites/4_small/parclongchamp.jpg");
+width: 20rem;
+
+}
+
+}
+
+@media (max-width: 1500px) { 
+
+.small1
+.small2
+.big
+.big1
+.big2
+.medium1 
+.medium2
+{ width: 20rem}
+
+@media (max-width: 1800px) { 
+
+.activites-list
+
+{ grid-template-rows: repeat(auto-fit, 15rem);
+width : 100%;
+}
+
+
+.activites-list> *  {  /* tous les enfants directs de activités list */
+    
+grid-column: span 1 ;
+grid-row : span 1;
+grid-template-columns: repeat(auto-fit, minmax(10rem,20rem));
+height: 15rem;
+}
+
+}
+
+
+@media (max-width: 700px) {
+
+  .activites-list
+
+{ grid-template-rows: repeat(auto-fit, 15rem);
+width : 100%;
+
+}
+
+.activites-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 92%;
+}
+
+        }
+
+
+/*FOOTER*/ 
+
+@media (max-width: 500px) { 
+
+footer 
+{ display : flex;
+flex-direction : column;
+margin-top: 1rem;
+width: 105%
+}
+
+}
+
+
+/*************RESPONSIVE MOBILE ***************************/
+@media (min-width: 345px)
+{ 
+
+.search_form {
+  display: flex;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  margin-left: -1rem;
+
+}
+
+}
+
+@media (min-width: 800px)
+
+{ 
+
+.marseille-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+
+.activites-list {
+  
+  display: flex;
+  flex-wrap: wrap;
+  width: 97%;
+
+}
+}
+
+@media (max-width: 330px)
+
+{ 
+
+.marseille-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+
+.activites-list {
+  
+  display: flex;
+  flex-direction: column;
+
+}
+}
+
+
+@media (max-width: 360px)
+{
+
+.search_form {
+  display: flex;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+}
+
+  @media (max-width: 700px)
+   {
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  width: 105%
+}
+
+
+.search_form {
+  display: flex;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  
+}
+
+
+.apartment > div {
+  background-color: rgb(240, 240, 240);
+  margin-top: 71px;
+  padding: 2rem;
+    padding-bottom: 2rem;
+  border-radius: 1rem;
+  margin-right: -0.5rem;
+  padding-bottom: 1.5rem;
+  margin-left: -2.5rem;
+}
+
+
+  .popular {
+    display: flex;
+    flex-direction: column; 
+  }
+
+
+    .popular-description {
+      flex-basis: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 0.5rem;
+      height: 12rem; 
+    }
+
+    .apartment-card img {
+      border-radius: 1rem 1rem 0rem 0rem;
+      padding: 0.5rem;
+      width: 100%;
+      min-width: 7rem;
+    }
+
+      .apartment .popular-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 1.7rem;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        justify-content: space-evenly;
+      }
+
+      .marseille-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+        flex-direction: column;
+      }
+
+    
+
+        .activities {
+          padding-left: 2.2rem;
+          margin-top: 4rem;
+          font-size: 1.5rem;
+        }
+    
+      
+        .popular-card {
+          display: flex;
+          min-width: 20rem;
+          max-height: 12rem;
+        }
+
+      }
+    }
