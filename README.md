@@ -49,6 +49,3 @@ Experience the site live here:
 
 ---
 
-## Author
-
-Developed by [bedgard](https://github.com/bedgard) as part of a front-end learning project.
