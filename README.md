@@ -9,7 +9,6 @@
 ---
 ## Live Demo ## 
 Experience the site live here:  
-
 → **[Open the Bookie Live Demo](https://bedgard.github.io/Bookie-project-1/)**
 
 ## Project Introduction
