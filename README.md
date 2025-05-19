@@ -7,6 +7,10 @@
 </p>
 
 ---
+## Live Demo
+
+Experience the site live here:
+→ Open the Bookie Live Demo
 
 ## Project Introduction
 
@@ -35,11 +39,6 @@ Hover effects, fades, and toggles created with CSS keyframes and transitions.
 All interactivity is achieved using only HTML and CSS, with no scripts required.
 
 ---
-
-## Live Demo
-
-Experience the site live here:  
-**→ [Open the Bookie Live Demo](https://bedgard.github.io/Bookie-project-2/)**
 
 ## Notes
 
